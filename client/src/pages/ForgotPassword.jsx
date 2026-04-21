@@ -12,7 +12,7 @@ const ForgotPassword = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const res = await axios.post('/forgot-password', { email });
+            const res = await axios.post('https://user-verify-login-system.onrender.com/forgot-password', { email });;
             if (res.data.success) {
                 toast.success('OTP sent to your email');
                 navigate('/reset-password', { state: { email } });

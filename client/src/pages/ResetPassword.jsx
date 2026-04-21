@@ -24,7 +24,7 @@ const ResetPassword = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/reset-password', { email, ...formData });
+            const res = await axios.post('https://user-verify-login-system.onrender.com/reset-password', { email, ...formData });
             if (res.data.success) {
                 toast.success('Password reset successfully');
                 navigate('/login');

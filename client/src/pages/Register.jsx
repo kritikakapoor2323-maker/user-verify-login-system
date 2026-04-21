@@ -22,7 +22,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/register', formData);
+            const res = await axios.post('https://user-verify-login-system.onrender.com/register', formData);
             if (res.data.success) {
                 toast.success(res.data.message);
                 navigate('/verify-otp', { state: { email: formData.email } });

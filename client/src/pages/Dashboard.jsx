@@ -21,7 +21,7 @@ const Dashboard = () => {
                             </button>
                         </div>
                     </div>
-                    
+
                     <div className="px-6 py-8 sm:p-10">
                         <h3 className="text-lg leading-6 font-medium text-gray-900 mb-5">Personal Information</h3>
                         <div className="border-t border-gray-200">

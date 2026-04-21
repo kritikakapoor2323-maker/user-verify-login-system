@@ -19,7 +19,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/login', formData);
+            const res = await axios.post('https://user-verify-login-system.onrender.com/login', formData);
             if (res.data.success) {
                 toast.success('Logged in successfully');
                 login(res.data.user, res.data.token);
